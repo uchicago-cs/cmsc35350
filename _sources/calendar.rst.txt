@@ -12,6 +12,8 @@ Week 1: Motivation and Introduction
 
 - `Neuromorphic computing gets ready for the (really) big time <http://www.datascienceassn.org/sites/default/files/Neuromorphic%20Computing%20Ready%20for%20Big%20Time.pdf>`_, Don Monroe. Communications of the ACM 57, no. 6 (2014): 13-15.
 
+- `A Survey of Neuromorphic Computing and Neural Networks in Hardware <https://arxiv.org/pdf/1705.06963.pdf>`_.  Catherine D. Schuman et al., 2017.
+
 
 **Thursday, April 4**
 
@@ -111,9 +113,7 @@ Week 10 - Paper  presentations
 
 - Paper presentations
 
-**Thursday, June 6**
-
-- Paper presentations
+**Thursday, June 6**: Reading period (no class)
 
 ----
 
