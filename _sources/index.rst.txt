@@ -1,7 +1,7 @@
 CMSC 35350 -- Neuromorphic Computing
 ====================================
 
-**Location: Ryerson 276, Tuesdays and Thursdays 9:30-10:50am.**
+Location: Ryerson 276, Tuesdays and Thursdays 9:30-10:50am.
 
 Course Staff
 ~~~~~~~~~~~~
