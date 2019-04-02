@@ -10,8 +10,6 @@ Week 1: Motivation and Introduction
 
 *Suggested reading*.
 
-- `Deep Learning <https://www.deeplearningbook.org>`_, Ian Goodfellow, Yoshua Bengio, Aaron Courville. MIT Press and online. 
-- `Neural Networks and Deep Learning <http://neuralnetworksanddeeplearning.com>`_, Michael Neilsen. A particularly nice presentation of back propagation.
 - `Cloud Computing for Science and Engineering <https://cloud4scieng.org>`_, Ian Foster and Dennis Gannon. MIT Press and online. Describes how to use deep learning services provided by Amazon, Google, and Microsoft.
 
 **Thursday, April 4**
