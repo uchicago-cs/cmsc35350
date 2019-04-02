@@ -6,7 +6,7 @@ Spring 2019 Calendar and Reading List
 Week 1: Motivation and Introduction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, April 2**: `Introduction to Neuromorphic Computing <https://github.com/uchicago-cs/cmsc35350/raw/master/resources/Rick-Intro-NmC.pdf>`_ (download).
+**Tuesday, April 2**: `Introduction to Neuromorphic Computing <https://github.com/uchicago-cs/cmsc35350/raw/master/resources/Rick-Intro-NmC.pdf>`_ (download). And the `Intel Loihi movie <https://www.youtube.com/watch?v=cDKnt9ldXv0>`_ and `a description of it <https://webdomino.net/index.php/tag/loihi/>`_.
 
 *Suggested reading*.
 
@@ -119,3 +119,8 @@ Week 10 - Paper  presentations
 
 ----
 
+Other papers
+
+- `Device and System Level Design Considerations for Analog-Non-Volatile-Memory Based Neuromorphic Architectures <https://arxiv.org/pdf/1512.08030.pdf>`_, Bruc Eryilmaz et al., 2015.
+
+- `Memristor Crossbar-Based Neuromorphic Computing System: A Case Study <https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6709674>`_, Miao Hu et al, 2014.
