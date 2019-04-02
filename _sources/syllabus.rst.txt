@@ -9,7 +9,7 @@ Course description
 Course organization
 -------------------
 
-This course is divided into three components:
+We expect this course to be divided into two components:
 
 * **Lectures**: The Tuesday and Thursday lectures will present technical material on deep learning systems.
 * **Paper**: Students have to write a paper on some aspect of neuromorphic computing.
@@ -24,13 +24,13 @@ See `Calendar and Reading List <calendar.html>`_.
 Grading
 -------
 
-The final grade will be divided as follows:  
+We expect the final grade to be divided as follows:  
 
 * 50% final paper
 
 * 50% class participation
 
-There will be no midterms or final exam. 
+We do not expect to have a midterm or final exam. 
 
 
 Policy on academic honesty
