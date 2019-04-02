@@ -119,3 +119,8 @@ Week 10 - Paper  presentations
 
 ----
 
+Other papers
+
+- `Device and System Level Design Considerations for Analog-Non-Volatile-Memory Based Neuromorphic Architectures <https://arxiv.org/pdf/1512.08030.pdf>`_, Bruc Eryilmaz et al., 2015.
+
+- `Memristor Crossbar-Based Neuromorphic Computing System: A Case Study <https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6709674>`_, Miao Hu et al, 2014.
