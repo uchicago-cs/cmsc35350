@@ -14,7 +14,7 @@ Week 1: Motivation and Introduction
 
 - `A Survey of Neuromorphic Computing and Neural Networks in Hardware <https://arxiv.org/pdf/1705.06963.pdf>`_.  Catherine D. Schuman et al., 2017. Reviews 3000+ articles.
 
-- `Neuromorphic Electronic Systems <https://web.stanford.edu/group/brainsinsilicon/documents/MeadNeuroMorphElectro.pdf>`_. Carver Mead, 1990. This author coined the term.
+- `Neuromorphic Electronic Systems <https://web.stanford.edu/group/brainsinsilicon/documents/MeadNeuroMorphElectro.pdf>`_. Carver Mead, Proceedings of the IEEE, 1990. This author coined the term.
 
 
 **Thursday, April 4**
