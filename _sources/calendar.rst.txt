@@ -24,19 +24,13 @@ Week 1: Motivation and Introduction
 Week 2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, April 9**: 
-
-- `The slides on Keras <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture3-Keras.pdf>`_ (slides download).
-
-- `Keras <https://keras.io>`_ (and the Chollet book referenced above)
+**Tuesday, April 9** 
 
 
 
-**Thursday, April 11**: Tensorflow
 
-- `The slides on TensorFlow <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture4-TensorFlow.pdf>`_ (slides download).
+**Thursday, April 11** 
 
-- `TensorFlow <https://www.tensorflow.org>`_
 
 
 ----
@@ -44,97 +38,83 @@ Week 2
 Week 3
 ~~~~~~
 
-**Tuesday, April 16**:
+**Tuesday, April 16**
 
-**Thursday, April 18**:
+**Thursday, April 18**
 
 
 
 ----
 
-Week 4 - Performance and Parallelism
+Week 4
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, October 22**: `TensorFlow Internals and Parallelism <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture7-Parallelism.pdf>`_ (slides download).
+**Tuesday, April 23**
 
-Papers to read:
-
-- Read `Tensorflow: a system for large-scale machine learning <https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf>`_, Abadi, Martín, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin et al. OSDI, vol. 16, pp. 265-283. 2016.
-
-- Read `Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis <https://arxiv.org/pdf/1802.09941.pdf>`_, Ben-Nun and Hoefler.
-
-**Thursday, October 24**: `Compilation <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture8-Compilation.pdf>`_ (slides download).
+**Thursday, April 25**
 
 
 ----
 
-Week 5 - Science and Performance
+Week 5
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, October 29**: `Machine Learning and Science, and the Data and Learning Hub <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture9-Materials.pdf>`_ (slides download).
+**Tuesday, April 30**
 
-- Guest lecture: Ben Blaiszik, Ryan Chard, and Logan Ward
+**Thursday, May 2**
 
-**Thursday, October 31**: `Measuring and Understanding Performance <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture10-Performance.pdf>`_ (slides download).
-
-Papers to read:
-
-- `DAWNBench: An End-to-End Deep Learning Benchmark and Competition <https://dawn.cs.stanford.edu/benchmark/papers/nips17-dawnbench.pdf>`_, Cody Coleman et al., NIPS 2017. Also `DAWNBench web site <https://dawn.cs.stanford.edu/benchmark/>`_ and `Analysis of DAWNBench, a Time-to-Accuracy Machine Learning Performance Benchmark <https://arxiv.org/pdf/1806.01427.pdf>`_, Cody Coleman et al., Arxiv.
-- `MLPerf <https://mlperf.org>`_
 
 ----
 
-Week 6 - From Edge to Supercomputers
+Week 6
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, November 5**: `Urban Sensing and Edge Computing (Charlie Catlett) <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/CeC-UChicago-5Nov2018-ilovepdf-compressed.pdf>`_ (slides download).
+**Tuesday, May 7**
 
-**Thursday, November 7**: `Deep Learning at Scale (Venkat Vishwanath) <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/VIshwanath_UCHICAGO_LearningCLASS.pdf>`_ (slides download).
+**Thursday, May 9**
 
 ----
 
-Week 7 - Silicon Trends and AutoML
+Week 7
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, November 12**: `Silicon trends <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture14-Silicon-Trends-DL-compressed.pdf>`_ (slides download).
+**Tuesday, May 14**
 
-**Thursday, November 14**: `AutoML <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture15-AutoML-compressed.pdf>`_ (slides download).
+**Thursday, May 16**
 
 
 
 ----
 
-Week 8 - Parallelism
+Week 8
 ~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, November 19**: `Parallelism <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture16-Parallelism.pdf>`_ (slides download).
+**Tuesday, May 21**
 
-**Thursday, November 21**
-
-- TBD
+**Thursday, May 23**
 
 ----
 
-Week 9 - TOPIC TBD
+Week 9
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, November 26**: `Zhao Zhang, TACC <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture17-Zhang.pdf>`_ (slides download).
+**Tuesday, May 28**
 
-**Thursday, November 28**: `Nicholas Malaya, AMD <https://github.com/uchicago-cs/cmsc35200/raw/master/resources/Lecture18-Malaya.pdf>`_ (slides download).
+**Thursday, May 30**
 
 
 ----
 
-Week 10 - Project presentations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Week 10 - Paper  presentations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, December 3**
+**Tuesday, June 4**
 
-- Project presentations
+- Paper presentations
 
-**Thursday, December 5**
+**Thursday, June 6**
 
-- Project presentations
+- Paper presentations
 
 ----
 
