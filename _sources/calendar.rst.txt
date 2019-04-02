@@ -6,7 +6,7 @@ Spring 2019 Calendar and Reading List
 Week 1: Motivation and Introduction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Tuesday, April 2**: Introduction to Neuromorphic Computing
+**Tuesday, April 2**: `Introduction to Neuromorphic Computing <https://github.com/uchicago-cs/cmsc35350/raw/master/resources/Rick-Intro-NmC.pdf>`_ (download). And the `Intel Loihi movie <https://www.youtube.com/watch?v=cDKnt9ldXv0>`_.
 
 *Suggested reading*.
 
