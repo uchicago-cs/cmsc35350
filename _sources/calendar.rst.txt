@@ -10,7 +10,8 @@ Week 1: Motivation and Introduction
 
 *Suggested reading*.
 
-- `Cloud Computing for Science and Engineering <https://cloud4scieng.org>`_, Ian Foster and Dennis Gannon. MIT Press and online. Describes how to use deep learning services provided by Amazon, Google, and Microsoft.
+- `Neuromorphic computing gets ready for the (really) big time <http://www.datascienceassn.org/sites/default/files/Neuromorphic%20Computing%20Ready%20for%20Big%20Time.pdf>`_, Don Monroe. Communications of the ACM 57, no. 6 (2014): 13-15.
+
 
 **Thursday, April 4**
 
