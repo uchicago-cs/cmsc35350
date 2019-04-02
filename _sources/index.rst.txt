@@ -1,7 +1,7 @@
-CMSC 35200 -- Deep Learning Systems
-===================================
+CMSC 35350 -- Neuromorphic Computing
+====================================
 
-**New Location: KPTC 120, Mondays and Wednesdays 1:30-2:50pm.**
+**New Location: Ryerson 276, Tuesdays and Thursdays 9:30-10:50am.**
 
 Course Staff
 ~~~~~~~~~~~~
