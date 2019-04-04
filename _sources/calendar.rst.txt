@@ -128,7 +128,7 @@ Other papers
 
 **Applications**
 
-- `- `Computer-Vision-Spinnaker-rsfs.2018.0007.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Computer-Vision-Spinnaker-rsfs.2018.0007.pdf>`_>`_
+- `Computer-Vision-Spinnaker-rsfs.2018.0007.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Computer-Vision-Spinnaker-rsfs.2018.0007.pdf>`_
 
 - `IJCNN2013.algorithms-applications.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_
 
