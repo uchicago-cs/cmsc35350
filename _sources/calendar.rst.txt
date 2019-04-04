@@ -124,3 +124,53 @@ Other papers
 - `Device and System Level Design Considerations for Analog-Non-Volatile-Memory Based Neuromorphic Architectures <https://arxiv.org/pdf/1512.08030.pdf>`_, Bruc Eryilmaz et al., 2015.
 
 - `Memristor Crossbar-Based Neuromorphic Computing System: A Case Study <https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6709674>`_, Miao Hu et al, 2014.
+
+
+**Applications**
+- `- `Computer-Vision-Spinnaker-rsfs.2018.0007.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Computer-Vision-Spinnaker-rsfs.2018.0007.pdf>`_>`_
+- `IJCNN2013.algorithms-applications.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_
+- `Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf>`_
+- `PNAS_2014_Schmuker.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/PNAS_2014_Schmuker.pdf>`_
+
+**Foundations**
+- `2010_International_Joint_Conference_on_Neural_Networks_(IJCNN)_2010_Jin.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2010_International_Joint_Conference_on_Neural_Networks_(IJCNN)_2010_Jin.pdf>`_
+- `Annu._Rev._Neurosci._1995_Douglas.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Annu._Rev._Neurosci._1995_Douglas.pdf>`_
+- `Communications_of_the_ACM_1994_Rumelhart.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Communications_of_the_ACM_1994_Rumelhart.pdf>`_
+- `IJCNN2013.neuron-model.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.neuron-model.pdf>`_
+- `Schuman_indiveri_neuromorphic_engineering_2015.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Schuman_indiveri_neuromorphic_engineering_2015.pdf>`_
+- `Synaptic-Electronics-Materials-Devices-Applications.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Synaptic-Electronics-Materials-Devices-Applications.pdf>`_
+- `Wong_2015_IEDM_-_Eryilmaz_-_Review_Neuromorphic_Devices_and_Systems.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Wong_2015_IEDM_-_Eryilmaz_-_Review_Neuromorphic_Devices_and_Systems.pdf>`_
+
+**Hardware**
+- `2010_IEEE_International_Symposium_on_Circuits_and_Systems_-_ISCAS_2010_2010_Schemmel.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2010_IEEE_International_Symposium_on_Circuits_and_Systems_-_ISCAS_2010_2010_Schemmel.pdf>`_
+- `2011_Indiveri.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2011_Indiveri.pdf>`_
+- `2015_Calayir.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2015_Calayir.pdf>`_
+- `Accelerated-LIF-Brainscales-2-1804.01906.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Accelerated-LIF-Brainscales-2-1804.01906.pdf>`_
+- `Frontiers_in_Neuroscience_2013_Jennifer_Hasler.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Frontiers_in_Neuroscience_2013_Jennifer_Hasler.pdf>`_
+- `Frontiers_in_Neuroscience_2013_Pfeil.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Frontiers_in_Neuroscience_2013_Pfeil.pdf>`_
+- `LoihiPreprint-IEEEMicroJan18.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/LoihiPreprint-IEEEMicroJan18.pdf>`_
+- `Science_2014_Service.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Science_2014_Service.pdf>`_
+
+**Materials-and-Devices**
+- `Amorphous-Metal-Sulphide-Microfibers-Enable-Photonic-Synapses-for-Brain-Like-Computing_2015_Advanced-Optical-Materials.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Amorphous-Metal-Sulphide-Microfibers-Enable-Photonic-Synapses-for-Brain-Like-Computing_2015_Advanced-Optical-Materials.pdf>`_
+- `EvolvableOrganicElectrochemicalTransistor.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/EvolvableOrganicElectrochemicalTransistor.pdf>`_
+- `Materials_Today_2011_Di_Ventra.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Materials_Today_2011_Di_Ventra.pdf>`_
+- `Nano_Lett._2009_Xia.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Nano_Lett._2009_Xia.pdf>`_
+- `Nanophotonic_Information_Physics_2014_Tait.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Nanophotonic_Information_Physics_2014_Tait.pdf>`_
+- `Stevens_IEEE_Transactions_2013_Rajendran.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Stevens_IEEE_Transactions_2013_Rajendran.pdf>`_
+
+**Review-Papers**
+- `Commun._ACM_2014_Monroe.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Commun._ACM_2014_Monroe.pdf>`_
+- `Lu_Indiveri_review_IEEE2015.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Lu_Indiveri_review_IEEE2015.pdf>`_
+- `Scientific_American_2005_Boahen.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Scientific_American_2005_Boahen.pdf>`_
+- `Survey-Neuromorphic-Computing-etc-Schuman-1705.06963.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Survey-Neuromorphic-Computing-etc-Schuman-1705.06963.pdf>`_
+
+**Software**
+- `005_2008.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/005_2008.pdf>`_
+- `10.3389-neuro.11-012.2008.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/10.3389-neuro.11-012.2008.pdf>`_
+- `Front._Neuroinform._2009_Bruederle.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Front._Neuroinform._2009_Bruederle.pdf>`_
+- `IJCNN2013.corelet-language.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.corelet-language.pdf>`_
+- `Neuron-Paper.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Neuron-Paper.pdf>`_
+- `fninf-07-00048.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/fninf-07-00048.pdf>`_
+- `fnins-12-00816.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/fnins-12-00816.pdf>`_
+- `pyNN-Software-1809.06016.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/pyNN-Software-1809.06016.pdf>`_
