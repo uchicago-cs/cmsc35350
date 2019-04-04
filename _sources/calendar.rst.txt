@@ -10,15 +10,18 @@ Week 1: Motivation and Introduction
 
 *Suggested reading*.
 
-- `Neuromorphic computing gets ready for the (really) big time <http://www.datascienceassn.org/sites/default/files/Neuromorphic%20Computing%20Ready%20for%20Big%20Time.pdf>`_, Don Monroe. Communications of the ACM 57, no. 6 (2014): 13-15. Brief overview.
-
-
 - `News article on SpiNNaker <https://singularityhub.com/2018/11/19/the-million-core-spinnaker-supercomputer-is-up-and-running/#sm.00wjhn8u19red3210to1yzbl9lxzi>`_
 
 
 **Thursday, April 4**
 
+Please read and be ready to discuss the following articles on Monday:
 
+- `Neuromorphic computing gets ready for the (really) big time  <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Commun._ACM_2014_Monroe.pdf>`_,  Don Monroe. Communications of the ACM 57, no. 6 (2014): 13-15. Brief overview.
+
+- `Memory and Information Processing in Neuromorphic Systems <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Lu_Indiveri_review_IEEE2015.pdf>`_
+
+- `Neuromorphic Microchips <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Scientific_American_2005_Boahen.pdf>`_, Kwabena Boahen, Scientific American, 2005.
 
 
 ----
@@ -119,6 +122,7 @@ Week 10 - Paper  presentations
 ----
 
 
+**The following is our initial list of papers to be discussed.** [A] means assigned above.
 
 **Applications**
 
@@ -188,11 +192,11 @@ Week 10 - Paper  presentations
 
 **Review-Papers**
 
-- `Commun._ACM_2014_Monroe.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Commun._ACM_2014_Monroe.pdf>`_
+- [A] `Commun._ACM_2014_Monroe.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Commun._ACM_2014_Monroe.pdf>`_
 
-- `Lu_Indiveri_review_IEEE2015.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Lu_Indiveri_review_IEEE2015.pdf>`_
+- [A] `Lu_Indiveri_review_IEEE2015.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Lu_Indiveri_review_IEEE2015.pdf>`_
 
-- `Scientific_American_2005_Boahen.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Scientific_American_2005_Boahen.pdf>`_
+- [A] `Scientific_American_2005_Boahen.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Scientific_American_2005_Boahen.pdf>`_
 
 - `A Survey of Neuromorphic Computing and Neural Networks in Hardware <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Survey-Neuromorphic-Computing-etc-Schuman-1705.06963.pdf>`_
 
