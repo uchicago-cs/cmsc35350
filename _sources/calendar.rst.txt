@@ -15,11 +15,11 @@ Week 1: Motivation and Introduction
 
 **Thursday, April 4**
 
-Please read and be ready to discuss the following articles on Monday:
+Please read and be ready to discuss the following articles on Tuesday:
 
 - `Neuromorphic computing gets ready for the (really) big time  <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Commun._ACM_2014_Monroe.pdf>`_,  Don Monroe. Communications of the ACM 57, no. 6 (2014): 13-15. Brief overview.
 
-- `Memory and Information Processing in Neuromorphic Systems <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Lu_Indiveri_review_IEEE2015.pdf>`_
+- `Memory and Information Processing in Neuromorphic Systems <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Lu_Indiveri_review_IEEE2015.pdf>`_, Giacomo Indiveri, 2015.
 
 - `Neuromorphic Microchips <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Scientific_American_2005_Boahen.pdf>`_, Kwabena Boahen, Scientific American, 2005.
 
