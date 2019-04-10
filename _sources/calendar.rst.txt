@@ -13,9 +13,14 @@ Week 1: Motivation and Introduction
 - `News article on SpiNNaker <https://singularityhub.com/2018/11/19/the-million-core-spinnaker-supercomputer-is-up-and-running/#sm.00wjhn8u19red3210to1yzbl9lxzi>`_
 
 
-**Thursday, April 4**
+----
 
-Please read and be ready to discuss the following articles on Tuesday:
+Week 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Tuesday, April 9** 
+
+We discussed these papers:
 
 - `Neuromorphic computing gets ready for the (really) big time  <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Commun._ACM_2014_Monroe.pdf>`_,  Don Monroe. Communications of the ACM 57, no. 6 (2014): 13-15. Brief overview.
 
@@ -24,17 +29,16 @@ Please read and be ready to discuss the following articles on Tuesday:
 - `Neuromorphic Microchips <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Scientific_American_2005_Boahen.pdf>`_, Kwabena Boahen, Scientific American, 2005.
 
 
-----
-
-Week 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Tuesday, April 9** 
-
-
 
 
 **Thursday, April 11** 
+
+We will discuss the following two papers.
+
+- `A neuromorphic network for generic multivariate data classification <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/PNAS_2014_Schmuker.pdf>`_--an application of the Spikey neuromorphic chip.
+
+- `Implementing Synaptic Plasticity in a VLSI Spiking Neural Network Model <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/01716062.pdf>`_--technical d
+tails of Spikey chip.
 
 
 
@@ -128,12 +132,9 @@ Week 10 - Paper  presentations
 
 - `Computer-Vision-Spinnaker-rsfs.2018.0007.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Computer-Vision-Spinnaker-rsfs.2018.0007.pdf>`_
 
-- `IJCNN2013.algorithms-applications.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_
+- `Cognitive Computing Systems: Algorithms and Applications for Networks of Neurosynaptic Cores <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_--applications of TrueNorth.
 
 - `Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf>`_
-
-- `PNAS_2014_Schmuker.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/PNAS_2014_Schmuker.pdf>`_
-
 
 
 **Foundations**
@@ -142,7 +143,7 @@ Week 10 - Paper  presentations
 
 - `Annu._Rev._Neurosci._1995_Douglas.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Annu._Rev._Neurosci._1995_Douglas.pdf>`_
 
-- `Communications_of_the_ACM_1994_Rumelhart.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Communications_of_the_ACM_1994_Rumelhart.pdf>`_
+- `The Basic Ideas in Neural Networks <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Communications_of_the_ACM_1994_Rumelhart.pdf>`_--introduction to neural networks from 1994.
 
 - `IJCNN2013.neuron-model.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.neuron-model.pdf>`_
 
