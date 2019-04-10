@@ -35,10 +35,9 @@ We discussed these papers:
 
 We will discuss the following two papers.
 
-- `A neuromorphic network for generic multivariate data classification <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/PNAS_2014_Schmuker.pdf>`_--an application of the Spikey neuromorphic chip.
+- `A neuromorphic network for generic multivariate data classification <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/PNAS_2014_Schmuker.pdf>`_ -- an application of the Spikey neuromorphic chip.
 
-- `Implementing Synaptic Plasticity in a VLSI Spiking Neural Network Model <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/01716062.pdf>`_--technical d
-tails of Spikey chip.
+- `Implementing Synaptic Plasticity in a VLSI Spiking Neural Network Model <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/01716062.pdf>`_ -- technical details of Spikey chip.
 
 
 
