@@ -50,8 +50,7 @@ Week 3
 
 We will discuss the following two papers.
 
-- `Scalable Energy-Efficient, Low-Latency Implementations of Trained Spiking Deep Belief Networks on SpiNNaker
- <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2015_Spin.pdf>`_.
+- `Scalable Energy-Efficient, Low-Latency Implementations of Trained Spiking Deep Belief Networks on SpiNNaker <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2015_Spin.pdf>`_.
 
 - `PyNN: A common interface for neuronal network simulators <https://www.frontiersin.org/articles/10.3389/neuro.11.011.2008/full>`_.
 
