@@ -56,6 +56,12 @@ We will discuss the following two papers.
 
 **Thursday, April 18**
 
+We will discuss the following two papers.
+
+- `Implementing Spike-Timing-Dependent Plasticity on SpiNNaker Neuromorphic Hardware <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2010_International_Joint_Conference_on_Neural_Networks_(IJCNN)_2010_Jin.pdf>`_.
+
+
+- `Neuromorphic Engineering <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Schuman_indiveri_neuromorphic_engineering_2015.pdf>`_
 
 
 ----
@@ -144,15 +150,11 @@ Week 10 - Paper  presentations
 
 **Foundations**
 
-- `2010_International_Joint_Conference_on_Neural_Networks_(IJCNN)_2010_Jin.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2010_International_Joint_Conference_on_Neural_Networks_(IJCNN)_2010_Jin.pdf>`_
-
 - `Annu._Rev._Neurosci._1995_Douglas.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Annu._Rev._Neurosci._1995_Douglas.pdf>`_
 
 - `The Basic Ideas in Neural Networks <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Communications_of_the_ACM_1994_Rumelhart.pdf>`_--introduction to neural networks from 1994.
 
 - `IJCNN2013.neuron-model.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.neuron-model.pdf>`_
-
-- `Schuman_indiveri_neuromorphic_engineering_2015.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Schuman_indiveri_neuromorphic_engineering_2015.pdf>`_
 
 - `Synaptic-Electronics-Materials-Devices-Applications.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Synaptic-Electronics-Materials-Devices-Applications.pdf>`_
 
