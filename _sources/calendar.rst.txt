@@ -61,8 +61,6 @@ We will discuss the following two papers.
 - `Implementing Spike-Timing-Dependent Plasticity on SpiNNaker Neuromorphic Hardware <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2010_International_Joint_Conference_on_Neural_Networks_(IJCNN)_2010_Jin.pdf>`_.
 
 
-- `Neuromorphic Engineering <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Schuman_indiveri_neuromorphic_engineering_2015.pdf>`_
-
 
 ----
 
@@ -71,15 +69,16 @@ Week 4
 
 **Tuesday, April 23**
 
+- `Neuromorphic Engineering <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Schuman_indiveri_neuromorphic_engineering_2015.pdf>`_
+
 - `Nengo: a Python tool for building large-scale functional brain models <http://compneuro.uwaterloo.ca/files/publications/bekolay.2014.pdf>`_.
 
-- `Robustness of spiking Deep Belief Networks to noise and reduced bit precision of neuro-inspired hardware platforms <https://www.frontiersin.org/articles/10.3389/fnins.2015.00222/full>`_.
 
 **Thursday, April 25**
 
 - `PUMA: A Programmable Ultra-efficient Memristor-based Accelerator for Machine Learning Inference <https://arxiv.org/pdf/1901.10351.pdfo>`_.
 
-- 
+- `Robustness of spiking Deep Belief Networks to noise and reduced bit precision of neuro-inspired hardware platforms <https://www.frontiersin.org/articles/10.3389/fnins.2015.00222/full>`_.
 
 ----
 
