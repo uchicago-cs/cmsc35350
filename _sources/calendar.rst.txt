@@ -87,9 +87,12 @@ Week 5
 
 **Tuesday, April 30**
 
+SNN toolbox, with Austin.
+
 
 **Thursday, May 2**
 
+pyNN hacking session.
 
 ----
 
@@ -97,6 +100,10 @@ Week 6
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Tuesday, May 7**
+
+- Jack
+
+- `Amorphous-Metal-Sulphide-Microfibers-Enable-Photonic-Synapses-for-Brain-Like-Computing_2015_Advanced-Optical-Materials.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Amorphous-Metal-Sulphide-Microfibers-Enable-Photonic-Synapses-for-Brain-Like-Computing_2015_Advanced-Optical-Materials.pdf>`_ (Valerie).
 
 **Thursday, May 9**
 
