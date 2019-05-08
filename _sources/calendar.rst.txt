@@ -107,6 +107,9 @@ Week 6
 
 **Thursday, May 9**
 
+- `Loihi: A Neuromorphic Manycore Processor with On-Chip Learning <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/LoihiPreprint-IEEEMicroJan18.pdf>`_
+
+
 ----
 
 Week 7
@@ -189,8 +192,6 @@ Week 10 - Paper  presentations
 - `Frontiers_in_Neuroscience_2013_Jennifer_Hasler.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Frontiers_in_Neuroscience_2013_Jennifer_Hasler.pdf>`_
 
 - `Frontiers_in_Neuroscience_2013_Pfeil.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Frontiers_in_Neuroscience_2013_Pfeil.pdf>`_
-
-- `LoihiPreprint-IEEEMicroJan18.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/LoihiPreprint-IEEEMicroJan18.pdf>`_
 
 - `Science_2014_Service.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Science_2014_Service.pdf>`_
 
