@@ -119,10 +119,17 @@ Week 7
 
 - Songhao will present `Spiking neural networks for computer vision <https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0007>`_.
 
-- ?? will present `Brian: a simulator for spiking neural networks in Python <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/005_2008.pdf>`_.
+- Pablo will present `Brian: a simulator for spiking neural networks in Python <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/005_2008.pdf>`_.
 
 **Thursday, May 16**
 
+- `A million spiking-neuron integrated circuit with a scalable communication network and interface <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/668.full.pdf>`_ (and `associated comment <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/614.full.pdf>`_).
+
+- `Real-time Scalable Cortical Computing at 46 Giga-Synaptic OPS/Watt with ∼100× Speedup in Time-to-Solution and ∼100,000× Reduction in Energy-to-Solution <http://vlsi.cornell.edu/~rajit/ps/sc14.pdf>`_
+
+- `Cognitive Computing Systems: Algorithms and Applications for Networks of Neurosynaptic Cores <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_--applications of TrueNorth.
+
+- `Non-Neural Network Applications for Spiking Neuromorphic Hardware <https://sc18.supercomputing.org/proceedings/workshops/workshop_files/ws_pmes105s1-file1.pdf>`_ and some of its references.
 
 
 ----
@@ -163,8 +170,6 @@ Week 10 - Paper  presentations
 **Applications**
 
 - `Computer-Vision-Spinnaker-rsfs.2018.0007.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Computer-Vision-Spinnaker-rsfs.2018.0007.pdf>`_
-
-- `Cognitive Computing Systems: Algorithms and Applications for Networks of Neurosynaptic Cores <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_--applications of TrueNorth.
 
 - `Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf>`_
 
