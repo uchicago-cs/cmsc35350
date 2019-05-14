@@ -61,8 +61,6 @@ We will discuss the following two papers.
 - `Implementing Spike-Timing-Dependent Plasticity on SpiNNaker Neuromorphic Hardware <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/2010_International_Joint_Conference_on_Neural_Networks_(IJCNN)_2010_Jin.pdf>`_.
 
 
-- `Neuromorphic Engineering <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Schuman_indiveri_neuromorphic_engineering_2015.pdf>`_
-
 
 ----
 
@@ -71,8 +69,16 @@ Week 4
 
 **Tuesday, April 23**
 
+- `Neuromorphic Engineering <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Schuman_indiveri_neuromorphic_engineering_2015.pdf>`_
+
+- `Nengo: a Python tool for building large-scale functional brain models <http://compneuro.uwaterloo.ca/files/publications/bekolay.2014.pdf>`_.
+
+
 **Thursday, April 25**
 
+- `PUMA: A Programmable Ultra-efficient Memristor-based Accelerator for Machine Learning Inference <https://arxiv.org/pdf/1901.10351.pdf>`_.
+
+- `Robustness of spiking Deep Belief Networks to noise and reduced bit precision of neuro-inspired hardware platforms <https://www.frontiersin.org/articles/10.3389/fnins.2015.00222/full>`_.
 
 ----
 
@@ -81,8 +87,12 @@ Week 5
 
 **Tuesday, April 30**
 
+SNN toolbox, with Austin.
+
+
 **Thursday, May 2**
 
+pyNN hacking session.
 
 ----
 
@@ -91,7 +101,14 @@ Week 6
 
 **Tuesday, May 7**
 
+- Jack
+
+- `Amorphous-Metal-Sulphide-Microfibers-Enable-Photonic-Synapses-for-Brain-Like-Computing_2015_Advanced-Optical-Materials.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Amorphous-Metal-Sulphide-Microfibers-Enable-Photonic-Synapses-for-Brain-Like-Computing_2015_Advanced-Optical-Materials.pdf>`_ (Valerie).
+
 **Thursday, May 9**
+
+- `Loihi: A Neuromorphic Manycore Processor with On-Chip Learning <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/LoihiPreprint-IEEEMicroJan18.pdf>`_
+
 
 ----
 
@@ -100,8 +117,19 @@ Week 7
 
 **Tuesday, May 14**
 
+- Songhao will present `Spiking neural networks for computer vision <https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0007>`_.
+
+- Pablo will present `Brian: a simulator for spiking neural networks in Python <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/005_2008.pdf>`_.
+
 **Thursday, May 16**
 
+- `A million spiking-neuron integrated circuit with a scalable communication network and interface <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/668.full.pdf>`_ (and `associated comment <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/614.full.pdf>`_).
+
+- `Real-time Scalable Cortical Computing at 46 Giga-Synaptic OPS/Watt with ∼100× Speedup in Time-to-Solution and ∼100,000× Reduction in Energy-to-Solution <http://vlsi.cornell.edu/~rajit/ps/sc14.pdf>`_
+
+- `Cognitive Computing Systems: Algorithms and Applications for Networks of Neurosynaptic Cores <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_--applications of TrueNorth.
+
+- `Non-Neural Network Applications for Spiking Neuromorphic Hardware <https://sc18.supercomputing.org/proceedings/workshops/workshop_files/ws_pmes105s1-file1.pdf>`_ and some of its references.
 
 
 ----
@@ -143,8 +171,6 @@ Week 10 - Paper  presentations
 
 - `Computer-Vision-Spinnaker-rsfs.2018.0007.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Computer-Vision-Spinnaker-rsfs.2018.0007.pdf>`_
 
-- `Cognitive Computing Systems: Algorithms and Applications for Networks of Neurosynaptic Cores <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_--applications of TrueNorth.
-
 - `Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Neuromorphic-sensory-systems_2010_Current-Opinion-in-Neurobiology.pdf>`_
 
 
@@ -175,8 +201,6 @@ Week 10 - Paper  presentations
 - `Frontiers_in_Neuroscience_2013_Jennifer_Hasler.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Frontiers_in_Neuroscience_2013_Jennifer_Hasler.pdf>`_
 
 - `Frontiers_in_Neuroscience_2013_Pfeil.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Frontiers_in_Neuroscience_2013_Pfeil.pdf>`_
-
-- `LoihiPreprint-IEEEMicroJan18.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/LoihiPreprint-IEEEMicroJan18.pdf>`_
 
 - `Science_2014_Service.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/Science_2014_Service.pdf>`_
 
@@ -211,7 +235,6 @@ Week 10 - Paper  presentations
 
 **Software**
 
-- `005_2008.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/005_2008.pdf>`_
 
 - `10.3389-neuro.11-012.2008.pdf <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/10.3389-neuro.11-012.2008.pdf>`_
 
