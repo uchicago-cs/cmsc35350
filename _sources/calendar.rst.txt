@@ -129,8 +129,6 @@ Week 7
 
 - `Cognitive Computing Systems: Algorithms and Applications for Networks of Neurosynaptic Cores <https://github.com/uchicago-cs/cmsc35350/raw/master/papers/IJCNN2013.algorithms-applications.pdf>`_--applications of TrueNorth.
 
-- `Non-Neural Network Applications for Spiking Neuromorphic Hardware <https://sc18.supercomputing.org/proceedings/workshops/workshop_files/ws_pmes105s1-file1.pdf>`_ and some of its references.
-
 
 ----
 
@@ -138,6 +136,8 @@ Week 8
 ~~~~~~~~~~~~~~~~~~~~
 
 **Tuesday, May 21**
+
+- `Non-Neural Network Applications for Spiking Neuromorphic Hardware <https://sc18.supercomputing.org/proceedings/workshops/workshop_files/ws_pmes105s1-file1.pdf>`_ and some of its references.
 
 **Thursday, May 23**
 
