@@ -1,6 +1,8 @@
 # LLM-based article processing pipeline 
 
 
+This repository contains text processing code relevant to the class CMSC 35360 at the University of Chicago.
+
 ##  Some set up
 
 Install *GNU parallel*: See https://www.gnu.org/software/parallel/parallel_tutorial.html
@@ -78,7 +80,13 @@ The $DATASET/{$DATASET}.jsonl file that contains information retrieved from Sema
 ```
 This creates a file `$DATASET/${DATASET}.ids` containing one SS id per line.
 
-Now we are ready to retrieve documents. This requires a Semantic Scholar API key.
+Now we are ready to retrieve documents. This requires a Semantic Scholar API key. You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., you might use the followibg to fetch just the documents that were rated as highly relevant:
+
+```
+cat eth/eth_score4.ids | parallel -j 1 "python3.12 simple.py -c $1 {}"
+```
+
+Here goes:
 
 ```
 % export S2_API_KEY=$MY_SS_API_KEY
@@ -86,7 +94,7 @@ Now we are ready to retrieve documents. This requires a Semantic Scholar API key
 ```
 
 This produces a folder `$DATASET/papers_${DATASET}` containing the retrieved papers.
-Note it will only retrieve those with open source PDFs, which in my experience tends to be around 10-15\%.
+Note it will only retrieve those with open source PDFs, which in my experience tends to be around 10-15\% of all documents.
 
 
 ## Extract text from PDFs
