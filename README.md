@@ -1,7 +1,8 @@
 # LLM-based article processing pipeline 
 
-
-This repository contains text processing code relevant to the class CMSC 35360 at the University of Chicago.
+This repository contains text processing code relevant to the class CMSC 35360 at the University of Chicago. There are two directories:
+* `source` is the code described in the following
+* `eth` is example data relating to Ethylene, as referenced in the following
 
 ##  Some set up
 
@@ -33,7 +34,7 @@ Edit the file to prepend '(  and append )' to each line, giving e.g.:
 
 ## Retrieve titles and abstracts; eleminate duplicates
 
-Run the program `get_papers.py` to query Semantic Scholar for titles + abstract that pertain to the keywords in the file that you just created. Provide <DATASET> as an argument:
+Run the program `get_papers.sh` which uses `get_papers.py` to query Semantic Scholar for titles + abstract that pertain to the keywords in the file that you just created. Provide <DATASET> as an argument:
 
 ```
 % DATASET=eth
@@ -107,6 +108,6 @@ We then use the `txtai` library to extract the txt from the PDFs:
 
 This produces, for each valid PDF, a file with a ".txt" extension in the folder `$DATASET/papers_${DATASET}`.
 
-##
+Note: If you need to re-run this program, e.g., because of an error, you may want to search for the words "Substitute the following" in `extract_txt_from_pdf.py` and enter the name of a file containing SS ids that were reported in previous runs to be non-open access, just to speed things yp,
 
 
