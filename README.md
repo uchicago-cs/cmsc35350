@@ -42,7 +42,10 @@ Run the program `get_papers.sh` which uses `get_papers.py` to query Semantic Sch
 % source get_papers.sh $DATASET
 ```
 
-This produces a file `../$DATASET/$DATASET.jsonl` containing the abstract and titles. Eliminate duplicates:
+This produces a file `../$DATASET/{$DATASET}.jsonl` that contains information retrieved from Semantic Scholar (SS).
+This file has one JSON document per line, with each document representing a paper, containing an SS id, title, abstract, etc.
+
+Eliminate duplicates:
 
 ```
 % sort -u ../$DATASET/$DATASET.jsonl > ../$DATASET/${DATASET}_uniq.jsonl
@@ -79,13 +82,6 @@ You can then identify the documents with different scores:
 
 # Extract document ids and retrieve documents
 
-The ../$DATASET/{$DATASET}.jsonl file that contains information retrieved from Semantic Scholar (SS) contains one JSON document per line, with each document containing an SS id, title, abstract, etc. We extract the SS ids for use in downloading papers:
-
-```
-% python extract_ids_from_jsonl.py $DATASET
-```
-This creates a file `$DATASET/${DATASET}.ids` containing one SS id per line.
-
 Now we are ready to retrieve documents. This requires a Semantic Scholar API key. You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., you might use the followibg to fetch just the documents that were rated as highly relevant:
 
 ```
@@ -100,7 +96,7 @@ Here goes:
 ```
 
 This produces a folder `../$DATASET/papers_${DATASET}` containing the retrieved papers.
-Note it will only retrieve those with open source PDFs, which in my experience tends to be around 10-15\% of all documents.
+Note it will only retrieve those with open source PDFs, which experience suggests to be around 10-15\% of all documents.
 
 
 ## Extract text from PDFs
