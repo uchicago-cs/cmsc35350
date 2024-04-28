@@ -61,14 +61,14 @@ We run the program as follows:
 ```
 % python check_relevance.py $DATASET
 ```
-This produces a file `../$DATASET/$DATASET_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
+This produces a file `../$DATASET/${DATASET}_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
 
 ```
 000019fa6cd085dd4668e61800794e0764516e37,3,1,0,1,1,"The abstract is partially relevant to the topic of finding a new and improved catalyst for the conversion of CO2 to ethylene, as it discusses the use of TiO2 as a catalyst and the limitation of CO2 formation. However, the primary focus is on waste management and not specifically on CO2 to ethylene conversion."
 00297f4d2ddee2de98c1d04a03529a349ddbff32,4,1,1,1,1,"The abstract is highly relevant to research on finding a new and improved catalyst for the conversion of CO2 to ethylene, as it discusses the development of novel MOFs with excellent catalytic activity in CO2 fixation, which is a crucial step towards converting CO2 to ethylene."
 ```
 
-You can then identify the documents with different 4:
+You can then identify the documents with different scores:
 ```
 % grep ",4," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score4.csv
 % grep ",3," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score3.csv
