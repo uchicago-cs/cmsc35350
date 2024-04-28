@@ -75,7 +75,7 @@ def extract_scores(paperId, message):
 
 
 in_path = '../' + dataset+'/' + dataset + '.jsonl'
-out_path = '../' + dataset + '/' + dataset + '.scores'
+out_path = '../' + dataset + '/' + dataset + '_scores.csv'
 
 # Find what we already have
 with open(out_path, 'r') as in_file:

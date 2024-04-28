@@ -29,7 +29,7 @@ for attempt in range(max_attempts):
     except Exception as e:
         print(f"Attempt {attempt+1} failed: {e}")
         if attempt < max_attempts - 1:
-            pause_time = random.uniform(0, max_pause)
+            pause_time = random.uniform(0, max_pause) + 1
             print(f"Pausing for {pause_time:.2f} seconds...")
             time.sleep(pause_time)
         else:
@@ -38,11 +38,11 @@ for attempt in range(max_attempts):
 
 retrieved = 0
 
-directory_path = Path(f'{outfile}')
+directory_path = Path(f'../{outfile}')
 if not directory_path.exists():
     directory_path.mkdir(parents=True, exist_ok=True)
 
-with open(f'{outfile}/{outfile}.jsonl', 'a') as file:
+with open(f'../{outfile}/{outfile}.jsonl', 'a') as file:
     while True:
         if 'data' in r:
             retrieved += len(r['data'])
