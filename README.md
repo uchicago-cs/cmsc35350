@@ -21,7 +21,7 @@ You can do this with ChatGPT4 by using a prompt like the following, with my area
 
 > I want to retrieve documents from Semantic Scholar that **relate to the science and engineering of materials that can catalyze the reduction of CO2 to ethylene**. Please suggest to me 100 sets of possible keywords. Output each set of keywords on a separate line, without any numbers.
 
-Save the output from this prompt in a file `<DATASET>/<DATASET>.txt`, where <DATASET> is a unique string like "eth" for Ethylene.
+Save the output from this prompt in a file `$DATASET/${DATASET}.txt`, where <DATASET> is a unique string like "eth" for Ethylene.
 
 Edit the file to prepend '(  and append )' to each line, giving e.g.:
 ```
@@ -38,14 +38,15 @@ Run the program `get_papers.sh` which uses `get_papers.py` to query Semantic Sch
 
 ```
 % DATASET=eth
+% cd source
 % source get_papers.sh $DATASET
 ```
 
-This produces a file `$DATASET/$DATASET.jsonl` containing the abstract and titles. Eliminate duplicates:
+This produces a file `../$DATASET/$DATASET.jsonl` containing the abstract and titles. Eliminate duplicates:
 
 ```
-% sort -u $DATASET/$DATASET.jsonl > $DATASET/${DATASET}_uniq.jsonl
-% mv $DATASET/${DATASET}_uniq.jsonl $DATASET/$DATASET.jsonl
+% sort -u ../$DATASET/$DATASET.jsonl > ../$DATASET/${DATASET}_uniq.jsonl
+% mv ../$DATASET/${DATASET}_uniq.jsonl ../$DATASET/$DATASET.jsonl
 ```
 
 
@@ -60,7 +61,7 @@ We run the program as follows:
 ```
 % python check_relevance.py $DATASET
 ```
-This produces a file `$DATASET/$DATASET_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
+This produces a file `../$DATASET/$DATASET_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
 
 ```
 000019fa6cd085dd4668e61800794e0764516e37,3,1,0,1,1,"The abstract is partially relevant to the topic of finding a new and improved catalyst for the conversion of CO2 to ethylene, as it discusses the use of TiO2 as a catalyst and the limitation of CO2 formation. However, the primary focus is on waste management and not specifically on CO2 to ethylene conversion."
@@ -69,12 +70,12 @@ This produces a file `$DATASET/$DATASET_scores.csv`, e.g. see the first two line
 
 You can then select say just the documents with scores of 4:
 ```
-% grep ",4," $DATASET/${DATASET}_scores.csv > $DATASET/${DATASET}_score4.csv
+% grep ",4," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score4.csv
 ```
 
 # Extract document ids and retrieve documents
 
-The $DATASET/{$DATASET}.jsonl file that contains information retrieved from Semantic Scholar (SS) contains one JSON document per line, with each document containing an SS id, title, abstract, etc. We extract the SS ids for use in downloading papers:
+The ../$DATASET/{$DATASET}.jsonl file that contains information retrieved from Semantic Scholar (SS) contains one JSON document per line, with each document containing an SS id, title, abstract, etc. We extract the SS ids for use in downloading papers:
 
 ```
 % python extract_ids_from_jsonl.py $DATASET
@@ -84,7 +85,7 @@ This creates a file `$DATASET/${DATASET}.ids` containing one SS id per line.
 Now we are ready to retrieve documents. This requires a Semantic Scholar API key. You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., you might use the followibg to fetch just the documents that were rated as highly relevant:
 
 ```
-cat eth/eth_score4.ids | parallel -j 1 "python3.12 simple.py -c $1 {}"
+cat ../$DATAST/${DATASET}_score4.ids | parallel -j 1 "python3.12 simple.py -c $1 {}"
 ```
 
 Here goes:
@@ -94,7 +95,7 @@ Here goes:
 % source download_from_ids.sh $DATASET <NUMBER>
 ```
 
-This produces a folder `$DATASET/papers_${DATASET}` containing the retrieved papers.
+This produces a folder `../$DATASET/papers_${DATASET}` containing the retrieved papers.
 Note it will only retrieve those with open source PDFs, which in my experience tends to be around 10-15\% of all documents.
 
 
@@ -106,7 +107,7 @@ We then use the `txtai` library to extract the txt from the PDFs:
 % python extract_txt_from_pdf.py $DATASET
 ```
 
-This produces, for each valid PDF, a file with a ".txt" extension in the folder `$DATASET/papers_${DATASET}`.
+This produces, for each valid PDF, a file with a ".txt" extension in the folder `../$DATASET/papers_${DATASET}`.
 
 Note: If you need to re-run this program, e.g., because of an error, you may want to search for the words "Substitute the following" in `extract_txt_from_pdf.py` and enter the name of a file containing SS ids that were reported in previous runs to be non-open access, just to speed things yp,
 
