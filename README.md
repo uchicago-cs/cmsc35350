@@ -46,7 +46,7 @@ This produces a file `../$DATASET/$DATASET.jsonl` containing the abstract and ti
 
 ```
 % sort -u ../$DATASET/$DATASET.jsonl > ../$DATASET/${DATASET}_uniq.jsonl
-% mv ../$DATASET/${DATASET}_uniq.jsonl ../$DATASET/$DATASET.jsonl
+% mv ../$DATASET/${DATASET}_uniq.jsonl ../$DATASET/${DATASET}.jsonl
 ```
 
 
