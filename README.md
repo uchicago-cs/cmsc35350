@@ -82,7 +82,7 @@ You can then identify the documents with different scores:
 
 # Extract document ids and retrieve documents
 
-Now we are ready to retrieve documents. This requires a Semantic Scholar API key. You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., you might use the followibg to fetch just the documents that were rated as highly relevant:
+Now we are ready to retrieve documents. This requires a [Semantic Scholar API key](https://www.semanticscholar.org/product/api#api-key-form). You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., you might use the followibg to fetch just the documents that were rated as highly relevant:
 
 ```
 cat ../$DATAST/${DATASET}_score4.ids | parallel -j 1 "python3.12 simple.py -c $1 {}"
