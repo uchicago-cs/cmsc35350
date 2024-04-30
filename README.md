@@ -111,4 +111,25 @@ This produces, for each valid PDF, a file with a ".txt" extension in the folder 
 
 Note: If you need to re-run this program, e.g., because of an error, you may want to search for the words "Substitute the following" in `extract_txt_from_pdf.py` and enter the name of a file containing SS ids that were reported in previous runs to be non-open access, just to speed things yp,
 
+## Generate a summary of each document
+
+Here we use the program `summarize_all.py` which prompts the LLM as follows. (The "chunk" is the first 20,000 characters of the document, a number chosen to reflect roughly the context window of the LLM. (We have also tried asking the model to update its suummary based on subsequent chunks, but have not evaluated whether that makes a difference.)
+
+> Please summarize in approximately 800 words this paper. [## BEGIN PAPER " + chunk + " END PAPER  ##] Your summary should contain the TITLE of the paper, the YEAR the paper was published, the KEY FINDINGS, the MAIN RESULT, one novel HYPOTHESIS the paper proposes or that you can infer from the text when the hypothesis is not explicit. Please propose an EXPERIMENT that would validate the hypothesis; be specific about required equipment and steps to follow. In addition to generating the summary, please generate a list of up to ten KEYWORDS that are relevant to the paper.  Please output your response as a valid JSON document with the UPPER CASE words as keys, and no other text before or after the JSON document.
+
+```
+% cd $DATASET
+% python summarize_all.py 
+```
+
+This program generates a `${DATASET}/${FILE}.summary` file for each `${FILE}.txt` file in `papers`
+
+This programs creates files within the `${DATASET}/papers` directory. There are then additional programs to process these files:
+
+```
+% source compact_all.sh   # Generate files with '.2' suffix, containing JSON with no newlines
+% python compact_all.py   # Create all.jsonl file
+% python process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
+```
+
 
