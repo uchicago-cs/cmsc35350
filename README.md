@@ -132,4 +132,26 @@ This programs creates files within the `${DATASET}/papers` directory. There are 
 % python process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
 ```
 
+Here is an example of a summary:
+
+```
+{
+  "TITLE": "Adsorption, activation, and conversion of carbon dioxide on small copper–tin nanoclusters",
+  "YEAR": 2023,
+  "KEY FINDINGS": "The study investigates the effects of nanostructuring, doping, and support on the activity and selectivity of Cu–Sn catalysts for CO2 conversion to CO and HCOOH. The Cu2Sn2 cluster is found to be highly selective towards CO if unsupported, or HCOOH if supported on graphene.",
+  "MAIN RESULT": "The Cu2Sn2 cluster is a potential candidate for the electrocatalytic conversion of CO2 molecule.",
+  "HYPOTHESIS": "The incorporation of Sn atoms in small copper clusters can enhance the selectivity towards CO or HCOOH by altering the electronic structure and atomic arrangement of the active sites.",
+  "EXPERIMENT": {
+    "Title": "Electrocatalytic CO2 reduction on Cu2Sn2 clusters supported on graphene",
+    "Equipment": "Electrochemical workstation, CO2 gas, graphene-supported Cu2Sn2 clusters, electrolyte solution (e.g. 0.1 M KHCO3)",
+    "Steps": [
+      "Prepare graphene-supported Cu2Sn2 clusters using a suitable method (e.g. chemical vapor deposition)",
+      "Set up the electrochemical workstation with a three-electrode configuration",
+      "Perform CO2 reduction reaction at a constant potential (e.g. -0.5 V vs. RHE) and monitor the product distribution using gas chromatography or other analytical techniques",
+      "Compare the product distribution with and without graphene support to validate the hypothesis"
+    ]
+  },
+  "KEYWORDS": ["CO2 conversion","electrocatalysis","Cu-Sn nanoclusters","graphene support","selectivity","CO","HCOOH","electrochemical reduction","nanostructuring","doping"]
+}
+```
 
