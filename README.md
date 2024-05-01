@@ -21,9 +21,15 @@ You can do this with ChatGPT4 by using a prompt like the following, with my area
 
 > I want to retrieve documents from Semantic Scholar that **relate to the science and engineering of materials that can catalyze the reduction of CO2 to ethylene**. Please suggest to me 100 sets of possible keywords. Output each set of keywords on a separate line, without any numbers.
 
-Save the output from this prompt in a file `$DATASET/${DATASET}.txt`, where <DATASET> is a unique string like "eth" for Ethylene.
+Save the output from this prompt in a file `$DATASET/${DATASET}.txt`, where `${DATASET}` is a unique string like "eth" for Ethylene. E.g., the first three lines of my file were:
 
-Edit the file to prepend '(  and append )' to each line, giving e.g.:
+```
+ethylene production from CO1
+CO2 reduction to ethylene catalysts
+materials science CO2 conversion
+```
+
+The next instruction is only necessary because I could not persuade ChatGPT to output the required characters reliably: Edit the file to prepend '(  and append )' to each line, giving e.g.:
 ```
 '( ethylene production from CO2 )'
 '( CO2 reduction to ethylene catalysts )'
@@ -34,7 +40,7 @@ Edit the file to prepend '(  and append )' to each line, giving e.g.:
 
 ## Retrieve titles and abstracts; eleminate duplicates
 
-Run the program `get_papers.sh` which uses `get_papers.py` to query Semantic Scholar for titles + abstract that pertain to the keywords in the file that you just created. Provide <DATASET> as an argument:
+Run the program `get_papers.sh` which calls `get_papers.py` on each line in `$DATASET/${DATASET}.txt` to query Semantic Scholar for titles + abstract that pertain to the keywords in the file that you just created. Provide <DATASET> as an argument:
 
 ```
 % DATASET=eth
