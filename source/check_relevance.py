@@ -16,7 +16,7 @@ server_ip = sys.argv[1]
 
 # Set OpenAI's API key and API base to use vLLM's API server.
 openai_api_key = "EMPTY"
-openai_api_base = f"{server_ip}:{port}/v1"
+openai_api_base = f"http://{server_ip}:{port}/v1"
 
 dataset = sys.argv[2]
 
