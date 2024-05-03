@@ -68,7 +68,7 @@ Your original queries likely generated many irrelevant documents.  For example, 
 We run the program as follows. You need to know an ip address for an inference server.
 
 ```
-% python check_relevance.py $IPADDRESS $DATASET
+% python3 check_relevance.py $IPADDRESS $DATASET
 ```
 This produces a file `../$DATASET/${DATASET}_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
 
@@ -110,7 +110,7 @@ Note it will only retrieve those with open source PDFs, which experience suggest
 We then use the `txtai` library to extract the txt from the PDFs:
 
 ```
-% python extract_txt_from_pdf.py $DATASET
+% python3 extract_txt_from_pdf.py $DATASET
 ```
 
 This produces, for each valid PDF, a file with a ".txt" extension in the folder `../$DATASET/papers_${DATASET}`.
@@ -125,7 +125,7 @@ Here we use the program `summarize_all.py` which prompts the LLM as follows. (Th
 
 ```
 % cd $DATASET
-% python summarize_all.py 
+% python3 summarize_all.py 
 ```
 
 This program generates a `${DATASET}/${FILE}.summary` file for each `${FILE}.txt` file in `papers`
@@ -134,8 +134,8 @@ This programs creates files within the `${DATASET}/papers` directory. There are 
 
 ```
 % source compact_all.sh   # Generate files with '.2' suffix, containing JSON with no newlines
-% python compact_all.py   # Create all.jsonl file
-% python process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
+% python3 compact_all.py   # Create all.jsonl file
+% python3 process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
 ```
 
 Here is an example of a summary:
