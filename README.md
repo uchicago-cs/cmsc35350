@@ -79,11 +79,11 @@ This produces a file `../$DATASET/${DATASET}_scores.csv`, e.g. see the first two
 
 You can then identify the documents with different scores:
 ```
-% grep ",4," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score4.csv
-% grep ",3," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score3.csv
-% grep ",2," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score2.csv
-% grep ",1," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score1.csv
-% grep ",0," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score0.csv
+% grep ",4," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score4.ids
+% grep ",3," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score3.ids
+% grep ",2," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score2.ids
+% grep ",1," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score1.ids
+% grep ",0," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score0.ids
 ```
 
 # Extract document ids and retrieve documents
