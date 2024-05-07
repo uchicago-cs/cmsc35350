@@ -124,18 +124,17 @@ Here we use the program `summarize_all.py` which prompts the LLM as follows. (Th
 > Please summarize in approximately 800 words this paper. [## BEGIN PAPER " + chunk + " END PAPER  ##] Your summary should contain the TITLE of the paper, the YEAR the paper was published, the KEY FINDINGS, the MAIN RESULT, one novel HYPOTHESIS the paper proposes or that you can infer from the text when the hypothesis is not explicit. Please propose an EXPERIMENT that would validate the hypothesis; be specific about required equipment and steps to follow. In addition to generating the summary, please generate a list of up to ten KEYWORDS that are relevant to the paper.  Please output your response as a valid JSON document with the UPPER CASE words as keys, and no other text before or after the JSON document.
 
 ```
-% cd $DATASET
-% python3 summarize_all.py 
+% python3 source/summarize_all.py $DATASET $IPADDRESS
 ```
 
-This program generates a `${DATASET}/${FILE}.summary` file for each `${FILE}.txt` file in `papers`
+This program generates a `${DATASET}/papers/${FILE}.summary` file for each `${FILE}.txt` file in `papers`
 
 This programs creates files within the `${DATASET}/papers` directory. There are then additional programs to process these files:
 
 ```
-% source compact_all.sh   # Generate files with '.2' suffix, containing JSON with no newlines
-% python3 compact_all.py   # Create all.jsonl file
-% python3 process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
+% source source/compact_all_summary_files.sh   # Generate files with '.2' suffix, containing JSON with no newlines
+% python3 source/generate_jsonl_summary_file.py   # Concatenate ',2' files to create all.jsonl file
+% python3 source/process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
 ```
 
 Here is an example of a summary:
