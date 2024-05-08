@@ -44,7 +44,7 @@ Run the program `source/bulk_fetch_abstracts_from_SS_via_keyword.py` which for e
 
 ```
 % DATASET=eth
-% python3.11 source/bulk_fetch_abstracts_from_SS_via_keyword.py $DATASET
+% python3.11 source/bulk_fetch_abstracts_from_SS_via_keyword.py -d $DATASET -f $DATASET/${DATASET}.txt
 ```
 
 This produces a file `$DATASET/{$DATASET}.jsonl` that contains information retrieved from Semantic Scholar (SS).
