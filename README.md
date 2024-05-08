@@ -87,17 +87,18 @@ You can then identify the documents with different scores:
 
 # Extract document ids and retrieve documents
 
-Now we are ready to retrieve documents. This requires a [Semantic Scholar API key](https://www.semanticscholar.org/product/api#api-key-form). You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., the following fetches just the documents rated as highly relevant:
+Now we are ready to retrieve documents. We use the program `source/retrieve_documents_from_SS.py`, which takes as arguments:
+* The `$DATASET`, as always
+* The name of a file containing ids for which documents are to be retrieved (e.g., one of the `${DATASET}_score{$N}.ids` files just created
+* An optional number of documents to skip (useful to avoid re-fetching when re-running).
 
-```
-% cat $DATAST/${DATASET}_score4.ids | parallel -j 1 "python3.12 source/retrieve_documents_from_SS.py -c $1 {}"
-```
+This program requires a [Semantic Scholar API key](https://www.semanticscholar.org/product/api#api-key-form), which we store in the environment variable `S2_API_KEY`. 
 
-Here goes:
+Thus, for example:
 
 ```
 % export S2_API_KEY=$MY_SS_API_KEY
-% source source/download_from_ids.sh $DATASET <NUMBER> # Here, <NUMBER> is a maximum number to try
+% python source/retrieve_documents_from_SS.py -d $DATASET -p $DATASET/${DATASET}_score4.ids 
 ```
 
 This produces a folder `$DATASET/papers_${DATASET}` containing the retrieved papers.
