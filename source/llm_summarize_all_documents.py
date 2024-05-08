@@ -6,12 +6,18 @@ import openai
 
 port = 80
 
-project   = sys.argv[1]
-ipaddress = sys.argv[2]
+if len(sys.argv) != 4:
+    print('Usage: python3.11 sourcce/llm_summarize_all_documents.py <ip_address> <api_key> <dataset>')
+    exit(1)
+
+ip_address = sys.argv[1]
+api_key    = sys,argv[2]
+dataset    = sys.argv[3]
+
 
 # Set OpenAI's API key and API base to use vLLM's API server.
-openai_api_key = "EMPTY"
-openai_api_base = f"http://{ipaddress}:{port}/v1"
+openai_api_key = api_key
+openai_api_base = f"http://{ip_address}:{port}/v1"
 print('Connecting to', openai_api_base)
 
 def create_prompt(chunk):
@@ -60,7 +66,6 @@ def generate_summary(index, infile, outfile):
     # Read the entire content of the file
     with open(infile, 'r', encoding='utf-8') as file:
         file_contents = file.read()
-    #print('FILE CONTENTS', file_contents)
 
     CHUNK_SIZE = 20000
 
@@ -83,7 +88,7 @@ def generate_summary(index, infile, outfile):
         file.write('\n')
 
 
-for index, file in enumerate( glob.glob(f'{project}/papers/*.txt') ):
+for index, file in enumerate( glob.glob(f'{dataset}/papers/*.txt') ):
     summary_file = os.path.splitext(file)[0]+'.summary'
     if os.path.isfile(summary_file) and os.path.getsize(summary_file) > 0:
         print(f'{index:>4d} Skipping {summary_file}')
