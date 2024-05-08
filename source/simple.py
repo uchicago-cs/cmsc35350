@@ -12,7 +12,7 @@ from time import sleep
 import urllib3
 urllib3.disable_warnings()
 
-#S2_API_KEY = os.environ['S2_API_KEY']
+S2_API_KEY = os.environ['S2_API_KEY']
 
 ids = []
 # Substitute the following with a list of known non-open access ids, as reported from a previous run, to accelerate things
@@ -141,6 +141,10 @@ def main(args: argparse.Namespace) -> None:
         count += 1
 
 
+# "Collection" is the dataset
+# "Number" is number to skip (default 0)
+# "paper_ids" is list to try
+#
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--collection', '-c')
