@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 #import dotenv
 #dotenv.load_dotenv()
 
@@ -143,7 +144,7 @@ def main(args: argparse.Namespace) -> None:
 
 # "Collection" is the dataset
 # "Number" is number to skip (default 0)
-# "paper_ids" is list to try
+# "paper_ids" is name of file containing paper ids
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--collection', '-c')
