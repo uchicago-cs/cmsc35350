@@ -6,12 +6,12 @@ import time
 from pathlib import Path
 
 if len(sys.argv) != 4:
-    print("Usage: python bulk_fetch_via_keyword.py 'search_term' year filename")
+    print("Usage: source/python3.11 bulk_fetch_via_keyword.py 'search_term' year filename")
     sys.exit(1)
 
-query = sys.argv[1]
-year = sys.argv[2]
-outfile = sys.argv[3]
+query   = sys.argv[1]
+year    = sys.argv[2]
+dataset = sys.argv[3]
 
 print(f'Query = {query}; year = {year}')
 
@@ -38,11 +38,11 @@ for attempt in range(max_attempts):
 
 retrieved = 0
 
-directory_path = Path(f'../{outfile}')
+directory_path = Path(f'{dataset}')
 if not directory_path.exists():
     directory_path.mkdir(parents=True, exist_ok=True)
 
-with open(f'../{outfile}/{outfile}.jsonl', 'a') as file:
+with open(f'{dataset}/{dataset}.jsonl', 'a') as file:
     while True:
         if 'data' in r:
             retrieved += len(r['data'])
