@@ -67,7 +67,7 @@ Your original queries likely generated many irrelevant documents.  For example, 
 We run the program as follows. You need to know an ip address and API key for an inference server.
 
 ```
-% python3 source/llm_check_relevance.py $IPADDRESS $APIKEY $DATASET
+% python3.11 source/llm_check_relevance.py $DATASET $IPADDRESS $APIKEY 
 ```
 This produces a file `$DATASET/${DATASET}_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
 
@@ -100,7 +100,7 @@ Here goes:
 % source source/download_from_ids.sh $DATASET <NUMBER> # Here, <NUMBER> is a maximum number to try
 ```
 
-This produces a folder `../$DATASET/papers_${DATASET}` containing the retrieved papers.
+This produces a folder `$DATASET/papers_${DATASET}` containing the retrieved papers.
 Note it will only retrieve those with open source PDFs, which experience suggests to be around 10-15\% of all documents.
 
 
@@ -109,7 +109,7 @@ Note it will only retrieve those with open source PDFs, which experience suggest
 We then use the `txtai` library to extract the txt from the PDFs:
 
 ```
-% python3 source/extract_txt_from_pdf.py $DATASET
+% python3.11 source/extract_txt_from_pdf.py $DATASET
 ```
 
 This produces, for each valid PDF, a file with a ".txt" extension in the folder `$DATASET/papers_${DATASET}`.
@@ -123,15 +123,15 @@ Here we use the program `llm_summarize_all.py` which prompts the LLM as follows.
 > Please summarize in approximately 800 words this paper. [## BEGIN PAPER " + chunk + " END PAPER  ##] Your summary should contain the TITLE of the paper, the YEAR the paper was published, the KEY FINDINGS, the MAIN RESULT, one novel HYPOTHESIS the paper proposes or that you can infer from the text when the hypothesis is not explicit. Please propose an EXPERIMENT that would validate the hypothesis; be specific about required equipment and steps to follow. In addition to generating the summary, please generate a list of up to ten KEYWORDS that are relevant to the paper.  Please output your response as a valid JSON document with the UPPER CASE words as keys, and no other text before or after the JSON document.
 
 ```
-% python3 source/llm_summarize_all.py $DATASET $IPADDRESS $APIKEY
+% python3.11 source/llm_summarize_all_documents.py $DATASET $IPADDRESS $APIKEY
 ```
 
 This program generates a `${DATASET}/papers/${FILE}.summary` file for each `${FILE}.txt` file in `papers`. There are then additional programs to process these files:
 
 ```
 % source source/compact_summary_files.sh $DATASET  # Generate files with '.2' suffix, containing JSON with no newlines
-% python3 source/generate_jsonl_file.py $DATASET  # Concatenate ',2' files to create all.jsonl file
-% python3 source/process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities--these may be unnecessary for different LLMs)
+% python3.11 source/generate_jsonl_file.py $DATASET  # Concatenate ',2' files to create all.jsonl file
+% python3.11 source/process_all.py $DATASET # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities--these may be unnecessary for different LLMs)
 ```
 
 Here is an example of a summary:
@@ -156,4 +156,3 @@ Here is an example of a summary:
   "KEYWORDS": ["CO2 conversion","electrocatalysis","Cu-Sn nanoclusters","graphene support","selectivity","CO","HCOOH","electrochemical reduction","nanostructuring","doping"]
 }
 ```
-
