@@ -40,22 +40,21 @@ The next instruction is only necessary because I could not persuade ChatGPT to o
 
 ## Retrieve titles and abstracts; eleminate duplicates
 
-Run the program `get_papers.sh` which calls `get_papers.py` on each line in `$DATASET/${DATASET}.txt` to query Semantic Scholar for titles + abstract that pertain to the keywords in the file that you just created. Provide <DATASET> as an argument:
+Run the program `source/get_papers.sh` which calls `source/get_papers.py` on each line in `$DATASET/${DATASET}.txt` to query Semantic Scholar for titles + abstract that pertain to the keywords in the file that you just created. Provide <DATASET> as an argument:
 
 ```
 % DATASET=eth
-% cd source
-% source get_papers.sh $DATASET
+% source source/get_papers.sh $DATASET
 ```
 
-This produces a file `../$DATASET/{$DATASET}.jsonl` that contains information retrieved from Semantic Scholar (SS).
+This produces a file `$DATASET/{$DATASET}.jsonl` that contains information retrieved from Semantic Scholar (SS).
 This file has one JSON document per line, with each document representing a paper, containing an SS id, title, abstract, etc.
 
 Eliminate duplicates:
 
 ```
-% sort -u ../$DATASET/$DATASET.jsonl > ../$DATASET/${DATASET}_uniq.jsonl
-% mv ../$DATASET/${DATASET}_uniq.jsonl ../$DATASET/${DATASET}.jsonl
+% sort -u $DATASET/$DATASET.jsonl > $DATASET/${DATASET}_uniq.jsonl
+% mv $DATASET/${DATASET}_uniq.jsonl $DATASET/${DATASET}.jsonl
 ```
 
 
@@ -68,7 +67,7 @@ Your original queries likely generated many irrelevant documents.  For example, 
 We run the program as follows. You need to know an ip address for an inference server.
 
 ```
-% python3 check_relevance.py $IPADDRESS $DATASET
+% python3 source/check_relevance.py $IPADDRESS $DATASET
 ```
 This produces a file `../$DATASET/${DATASET}_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
 
