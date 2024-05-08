@@ -9,7 +9,7 @@ import csv
 port = 80
 
 if len(sys.argv) != 4:
-    print("Usage: python3.11 source/check_relevance.py <DATASET> <server_ip> <api_key>")
+    print("Usage: python3.11 source/check_relevance.py <dataset> <server_ip> <api_key>")
     sys.exit(1)
 
 dataset   = sys.argv[1]
