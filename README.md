@@ -133,7 +133,7 @@ This programs creates files within the `${DATASET}/papers` directory. There are 
 
 ```
 % source source/compact_summary_files.sh $DATASET  # Generate files with '.2' suffix, containing JSON with no newlines
-% python3 source/create_jsonl_file.py $DATASET  # Concatenate ',2' files to create all.jsonl file
+% python3 source/generate_jsonl_file.py $DATASET  # Concatenate ',2' files to create all.jsonl file
 % python3 source/process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
 ```
 
