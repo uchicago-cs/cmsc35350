@@ -60,16 +60,16 @@ Eliminate duplicates:
 
 ## Identify relevant documents
 
-Your original queries likely generated many irrelevant documents.  For example, my queries relating to Ethylene returned articles relating to the ripening of fruit. Thus, you may want to use an LLM to rate the relevance of each paper found so far. The program `check_relevance.py` does this, using this prompt: 
+Your original queries likely generated many irrelevant documents.  For example, my queries relating to Ethylene returned articles relating to the ripening of fruit. Thus, you may want to use an LLM to rate the relevance of each paper found so far. The program `source/llm_check_relevance.py` does this, using this prompt: 
 
 >gpt_user_prompt = "Read the following abstract carefully. After reading, answer the following questions to determine if the abstract pertains to research related to finding a new and improved catalyst for the conversion of CO2 to ethylene, giving a score of 1 if true and 0 if false, and reporting each in a separate line with the form <HEADING>: <numeric score> <explanation>: **Topic Relevance**: Does the abstract mention 'CO2', 'carbon dioxide', 'ethylene', or 'catalysts'? List any terms used in the abstract that relate to these keywords.  **Research Focus**: Is the primary focus of the research on developing or testing materials that could act as catalysts? Specify what the research aims to achieve or discover.  **Outcome Mention**: Does the abstract discuss any results or potential outcomes regarding the efficiency, selectivity, or improvement of catalysts for converting CO2 to ethylene? Briefly describe these outcomes.  **Innovation Highlight**: Does the abstract indicate any novel approaches, techniques, or materials being investigated or used for the catalysts? Detail any innovative aspects mentioned. **Aggregate Score**: Add the four scores to get an aggregate score of from 0 to 4, and report that score in the form **Aggregate Score**: <score>, along with a sentence of about 50 words explaining your overall score. [## BEGIN ABSTRACT " + chunk + " END ABSTRACT ##]"
 
-We run the program as follows. You need to know an ip address for an inference server.
+We run the program as follows. You need to know an ip address and API key for an inference server.
 
 ```
-% python3 source/check_relevance.py $IPADDRESS $DATASET
+% python3 source/llm_check_relevance.py $IPADDRESS $APIKEY $DATASET
 ```
-This produces a file `../$DATASET/${DATASET}_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
+This produces a file `$DATASET/${DATASET}_scores.csv`, e.g. see the first two lines of `eth/eth_scores.csv`:
 
 ```
 000019fa6cd085dd4668e61800794e0764516e37,3,1,0,1,1,"The abstract is partially relevant to the topic of finding a new and improved catalyst for the conversion of CO2 to ethylene, as it discusses the use of TiO2 as a catalyst and the limitation of CO2 formation. However, the primary focus is on waste management and not specifically on CO2 to ethylene conversion."
@@ -78,11 +78,11 @@ This produces a file `../$DATASET/${DATASET}_scores.csv`, e.g. see the first two
 
 You can then identify the documents with different scores:
 ```
-% grep ",4," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score4.ids
-% grep ",3," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score3.ids
-% grep ",2," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score2.ids
-% grep ",1," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score1.ids
-% grep ",0," ../$DATASET/${DATASET}_scores.csv > ../$DATASET/${DATASET}_score0.ids
+% grep ",4," $DATASET/${DATASET}_scores.csv > $DATASET/${DATASET}_score4.ids
+% grep ",3," $DATASET/${DATASET}_scores.csv > $DATASET/${DATASET}_score3.ids
+% grep ",2," $DATASET/${DATASET}_scores.csv > $DATASET/${DATASET}_score2.ids
+% grep ",1," $DATASET/${DATASET}_scores.csv > $DATASET/${DATASET}_score1.ids
+% grep ",0," $DATASET/${DATASET}_scores.csv > $DATASET/${DATASET}_score0.ids
 ```
 
 # Extract document ids and retrieve documents
@@ -90,14 +90,14 @@ You can then identify the documents with different scores:
 Now we are ready to retrieve documents. This requires a [Semantic Scholar API key](https://www.semanticscholar.org/product/api#api-key-form). You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., the following fetches just the documents rated as highly relevant:
 
 ```
-cat ../$DATAST/${DATASET}_score4.ids | parallel -j 1 "python3.12 simple.py -c $1 {}"
+% cat $DATAST/${DATASET}_score4.ids | parallel -j 1 "python3.12 source/simple.py -c $1 {}"
 ```
 
 Here goes:
 
 ```
 % export S2_API_KEY=$MY_SS_API_KEY
-% source download_from_ids.sh $DATASET <NUMBER>
+% source source/download_from_ids.sh $DATASET <NUMBER> # Here, <NUMBER> is a maximum number to try
 ```
 
 This produces a folder `../$DATASET/papers_${DATASET}` containing the retrieved papers.
@@ -109,31 +109,29 @@ Note it will only retrieve those with open source PDFs, which experience suggest
 We then use the `txtai` library to extract the txt from the PDFs:
 
 ```
-% python3 extract_txt_from_pdf.py $DATASET
+% python3 source/extract_txt_from_pdf.py $DATASET
 ```
 
-This produces, for each valid PDF, a file with a ".txt" extension in the folder `../$DATASET/papers_${DATASET}`.
+This produces, for each valid PDF, a file with a ".txt" extension in the folder `$DATASET/papers_${DATASET}`.
 
-Note: If you need to re-run this program, e.g., because of an error, you may want to search for the words "Substitute the following" in `extract_txt_from_pdf.py` and enter the name of a file containing SS ids that were reported in previous runs to be non-open access, just to speed things yp,
+Note: If you need to re-run this program, e.g., because of an error, you may want to search for the words "Substitute the following" in `source/extract_txt_from_pdf.py` and enter the name of a file containing SS ids that were reported in previous runs to be non-open access, just to speed things yp,
 
 ## Generate a summary of each document
 
-Here we use the program `summarize_all.py` which prompts the LLM as follows. (The "chunk" is the first 20,000 characters of the document, a number chosen to reflect roughly the context window of the LLM. (We have also tried asking the model to update its suummary based on subsequent chunks, but have not evaluated whether that makes a difference.)
+Here we use the program `llm_summarize_all.py` which prompts the LLM as follows. (The "chunk" is the first 20,000 characters of the document, a number chosen to reflect roughly the context window of the LLM. (We have also tried asking the model to update its summary based on subsequent chunks, but have not evaluated whether that makes a difference.)
 
 > Please summarize in approximately 800 words this paper. [## BEGIN PAPER " + chunk + " END PAPER  ##] Your summary should contain the TITLE of the paper, the YEAR the paper was published, the KEY FINDINGS, the MAIN RESULT, one novel HYPOTHESIS the paper proposes or that you can infer from the text when the hypothesis is not explicit. Please propose an EXPERIMENT that would validate the hypothesis; be specific about required equipment and steps to follow. In addition to generating the summary, please generate a list of up to ten KEYWORDS that are relevant to the paper.  Please output your response as a valid JSON document with the UPPER CASE words as keys, and no other text before or after the JSON document.
 
 ```
-% python3 source/summarize_all.py $DATASET $IPADDRESS
+% python3 source/llm_summarize_all.py $DATASET $IPADDRESS $APIKEY
 ```
 
-This program generates a `${DATASET}/papers/${FILE}.summary` file for each `${FILE}.txt` file in `papers`
-
-This programs creates files within the `${DATASET}/papers` directory. There are then additional programs to process these files:
+This program generates a `${DATASET}/papers/${FILE}.summary` file for each `${FILE}.txt` file in `papers`. There are then additional programs to process these files:
 
 ```
 % source source/compact_summary_files.sh $DATASET  # Generate files with '.2' suffix, containing JSON with no newlines
 % python3 source/generate_jsonl_file.py $DATASET  # Concatenate ',2' files to create all.jsonl file
-% python3 source/process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities)
+% python3 source/process_all.py   # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities--these may be unnecessary for different LLMs)
 ```
 
 Here is an example of a summary:
