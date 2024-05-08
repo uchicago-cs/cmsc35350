@@ -79,10 +79,10 @@ def extract_scores(paperId, message):
 in_path  = f'{dataset}/{dataset}.jsonl'
 out_path = f'{dataset}/{dataset}_scores.csv'
 
+ids_already_read = []
 if os.path.isfile(out_path):
     with open(out_path, 'r') as in_file:
         csv_reader = csv.reader(in_file)
-        ids_already_read = []
         for row in csv_reader:
             if row:  # Check if row is not empty
                 ids_already_read.append(row[0])
