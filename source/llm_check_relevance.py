@@ -86,8 +86,7 @@ if os.path.isfile(out_path):
         for row in csv_reader:
             if row:  # Check if row is not empty
                 ids_already_read.append(row[0])
-
-print('Already read:', ids_already_read)
+        print('Already read:', ids_already_read)
 
 count = 0
 
