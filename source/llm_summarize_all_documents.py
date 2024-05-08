@@ -12,7 +12,7 @@ if len(sys.argv) != 4:
 
 dataset    = sys.argv[1]
 ip_address = sys.argv[2]
-api_key    = sys,argv[3]
+api_key    = sys.argv[3]
 
 
 # Set OpenAI's API key and API base to use vLLM's API server.
