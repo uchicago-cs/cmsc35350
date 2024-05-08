@@ -61,12 +61,12 @@ def download_pdf(url: str, path: str, user_agent: str = 'requests/2.0.0'):
                 f.write(chunk)
 
 
-def download_paper(paper_id, collection, user_agent):
+def download_paper(paper_id, dataset, user_agent):
     # Check if not open access
     if paper_id in ids:
         return 'Already known'
     # check if the pdf has already been downloaded
-    pdf_path = os.path.join(f'{collection}/papers', f'{paper_id}.pdf')
+    pdf_path = os.path.join(f'{dataset}/papers', f'{paper_id}.pdf')
     if os.path.exists(pdf_path):
         print('SHOULD NOT GET HERE')
         exit(1)
@@ -89,10 +89,10 @@ def download_paper(paper_id, collection, user_agent):
     if paper['openAccessPdf']==None:
         return('Not open access PDF')
     pdf_url: str = paper['openAccessPdf']['url']
-    pdf_path = os.path.join(f'{collection}/papers', f'{paperId}.pdf')
+    pdf_path = os.path.join(f'{dataset}/papers', f'{paperId}.pdf')
 
     # create the directory if it doesn't exist
-    os.makedirs(collection, exist_ok=True)
+    os.makedirs(dataset, exist_ok=True)
 
     # check if the pdf has already been downloaded
     if os.path.exists(pdf_path):
@@ -108,7 +108,7 @@ def download_paper(paper_id, collection, user_agent):
 
 
 def main(args: argparse.Namespace) -> None:
-    collection = args.collection
+    dataset = args.dataset
     with open(args.paper_ids, 'r') as file:
         paper_ids = file.readlines()
         paper_ids = [id.strip() for id in paper_ids]  #
@@ -117,15 +117,15 @@ def main(args: argparse.Namespace) -> None:
     count = int(args.number)
     paper_ids = paper_ids[count:]
 
-    if not os.path.exists(f'{collection}/papers'):
-        os.makedirs(f'{collection}/papers')
+    if not os.path.exists(f'{dataset}/papers'):
+        os.makedirs(f'{dataset}/papers')
 
     for paper_id in paper_ids:
-        if os.path.exists(f'{collection}/papers/{paper_id}.pdf'):
+        if os.path.exists(f'{dataset}/papers/{paper_id}.pdf'):
             #print(f'[{count:>5}] {paper_id} already exists')
             pass
         else:
-            result = download_paper(paper_id, collection=args.collection, user_agent=args.user_agent)
+            result = download_paper(paper_id, dataset=args.dataset, user_agent=args.user_agent)
             if result=='Not open access':
                 print(f'[{count:>5}] {paper_id} is not open access') 
             elif result=='Not open access PDF':
@@ -142,12 +142,12 @@ def main(args: argparse.Namespace) -> None:
         count += 1
 
 
-# "Collection" is the dataset
+# "Dataset" is the dataset
 # "Number" is number to skip (default 0)
 # "paper_ids" is name of file containing paper ids
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--collection', '-c')
+    parser.add_argument('--dataset', '-d')
     parser.add_argument('--number', '-n', default=0)
     parser.add_argument('--user-agent', '-u', default='requests/2.0.0')
     parser.add_argument('--paper_ids', '-p')
