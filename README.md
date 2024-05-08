@@ -90,7 +90,7 @@ You can then identify the documents with different scores:
 Now we are ready to retrieve documents. This requires a [Semantic Scholar API key](https://www.semanticscholar.org/product/api#api-key-form). You'll need to edit `download_from_ids.sh` to indicate which ids are to be fetched. E.g., the following fetches just the documents rated as highly relevant:
 
 ```
-% cat $DATAST/${DATASET}_score4.ids | parallel -j 1 "python3.12 source/simple.py -c $1 {}"
+% cat $DATAST/${DATASET}_score4.ids | parallel -j 1 "python3.12 source/retrieve_documents_from_SS.py -c $1 {}"
 ```
 
 Here goes:
