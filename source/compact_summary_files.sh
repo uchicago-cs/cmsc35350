@@ -2,7 +2,7 @@
 
 if [ $# -ne 1 ]
 then
-    echo "Missing argument: <project>"
+    echo "Missing argument: <dataset>"
 else
     for file in $1/papers/*.summary; do
         echo Compacting $file
