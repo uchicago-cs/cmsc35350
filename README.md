@@ -40,11 +40,11 @@ The next instruction is only necessary because I could not persuade ChatGPT to o
 
 ## Retrieve titles and abstracts; eleminate duplicates
 
-Run the program `source/get_papers.sh` which calls `source/get_papers.py` on each line in `$DATASET/${DATASET}.txt` to query Semantic Scholar for titles + abstract that pertain to the keywords in the file that you just created. Provide <DATASET> as an argument:
+Run the program `source/bulk_fetch_abstracts_from_SS_via_keyword.py` which for each line in `$DATASET/${DATASET}.txt` dispatches a query to Semantic Scholar (SS) for titles + abstract that pertain to that keyword. Provide <DATASET> as an argument:
 
 ```
 % DATASET=eth
-% source source/get_papers.sh $DATASET
+% python3.11 source/bulk_fetch_abstracts_from_SS_via_keyword.py $DATASET
 ```
 
 This produces a file `$DATASET/{$DATASET}.jsonl` that contains information retrieved from Semantic Scholar (SS).
