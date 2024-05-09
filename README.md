@@ -131,8 +131,8 @@ This program generates a `${DATASET}/papers/${FILE}.summary` file for each `${FI
 
 ```
 % source source/compact_summary_files.sh $DATASET  # Generate files with '.2' suffix, containing JSON with no newlines
-% python3.11 source/generate_jsonl_file.py $DATASET  # Concatenate ',2' files to create all.jsonl file
-% python3.11 source/process_all.py $DATASET # Read all.jsonl and extract information (has some special cases in it to deal with LLM oddities--these may be unnecessary for different LLMs)
+% python3.11 source/generate_jsonl_file.py $DATASET  # Concatenate ',2' files to create all.jsonl file containing all outputs
+% python3.11 source/extract_hypotheses_from_llm_output.py $DATASET # Read all.jsonl and extract information
 ```
 
 Here is an example of a summary:
